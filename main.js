@@ -23,12 +23,8 @@ for (var i = 0; i < customers.results.length; i++) {
     addStreet.className = "address"
 
     let addCity = document.createElement ("label")
-    addCity.innerHTML = `${customer.location.city}, ${customer.location.state}`
+    addCity.innerHTML = `${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`
     addCity.className = "city"
-
-    let addZip = document.createElement ("label")
-    addZip.innerHtml = `${customer.location.postcode}`
-    addZip.className = "zip"
 
     let phoneNum = document.createElement("label")
     phoneNum.innerHTML = `${customer.phone}`
@@ -44,7 +40,6 @@ for (var i = 0; i < customers.results.length; i++) {
     div.appendChild(email)
     div.appendChild(addStreet)
     div.appendChild(addCity)
-    div.appendChild(addZip)
     div.appendChild(phoneNum)
     div.appendChild(social)
     document.body.appendChild(div)

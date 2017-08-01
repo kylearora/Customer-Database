@@ -77,17 +77,6 @@ div img {
   font-size: 14px;
 }
 
-.zip{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  width: 140px;
-  color: grey;
-  text-transform: capitalize;
-  font-size: 14px;
-}
-
 .phone {
   display: flex;
   justify-content: center;
